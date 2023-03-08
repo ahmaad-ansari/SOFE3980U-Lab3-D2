@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: binarycalculator
+      app: bin
   template:
     metadata:
       labels:
-        app: binarycalculator
+        app: bin
     spec:
       containers:
         - image: binarycalculator/binarycalculator-server
-          name: binarycalculator
+          name: bin
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: root
@@ -26,4 +26,4 @@ spec:
               value: Table
           ports:
             - containerPort: 3306
-              name: binarycalculator
+              name: bin
