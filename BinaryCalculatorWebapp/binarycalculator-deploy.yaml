@@ -13,7 +13,7 @@ spec:
         app: bin
     spec:
       containers:
-        - image: binarycalculator/binarycalculator-server
+        - image: bin/binarycalculator-server
           name: bin
           env:
             - name: MYSQL_ROOT_PASSWORD
