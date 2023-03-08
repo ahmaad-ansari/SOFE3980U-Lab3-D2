@@ -13,17 +13,8 @@ spec:
         app: bin
     spec:
       containers:
-        - image: bin/bin-server
+        - image: gcr.io/starry-being-379922/binarycalculator
           name: bin
-          env:
-            - name: MYSQL_ROOT_PASSWORD
-              value: root
-            - name: MYSQL_USER
-              value: user
-            - name: MYSQL_PASSWORD
-              value: sofe3980u
-            - name: MYSQL_DATABASE
-              value: Table
           ports:
-            - containerPort: 3306
+            - containerPort: 8080
               name: bin
