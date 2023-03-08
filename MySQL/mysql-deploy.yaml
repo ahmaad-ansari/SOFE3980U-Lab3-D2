@@ -23,7 +23,7 @@ spec:
             - name: MYSQL_PASSWORD
               value: sofe3980u
             - name: MYSQL_DATABASE
-              value: BinaryCalculator
+              value: Readings
           ports:
             - containerPort: 3306
               name: mysql
